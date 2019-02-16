@@ -19,10 +19,9 @@ function numGen() {
         numberOptions[i] = Math.floor(Math.random() * 12) + 1;
     };
     // assigns numbers to crystals
-    $("#crystal-1").val(numberOptions[0]);
-    $("#crystal-2").val(numberOptions[1]);
-    $("#crystal-3").val(numberOptions[2]);
-    $("#crystal-4").val(numberOptions[3]);
+    for (var i=0;i<4;i++){
+        $("#crystal-"+(i+1)).val(numberOptions[i]);
+    };
     // sets player's current total to 0 and they will build on it by clicking crystals
     sum = 0;
     $("#total").text(sum);
@@ -38,14 +37,14 @@ $(".crystal").on("click", function () {
     crystalVal = parseInt(crystalVal);
     sum += crystalVal;
     $("#total").text(sum);
-    // if they win
+    // if player wins
     if (sum === desiredNumber) {
         wins++;
         $("#wins").text(wins);
         $("#outcome").text("You win!")
         numGen();
     }
-    // if the lose
+    // if player loses
     else if (sum >= desiredNumber) {
         losses++;
         $("#losses").text(losses);
