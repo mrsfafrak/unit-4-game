@@ -16,21 +16,40 @@
 </head>
 
 <body>
-    <h1>Crystal Collector Game</h1>
-    <img class="crystal" id="crystal-1" src="./assets/images/Blue_Crystal.jpg" alt="Blue_Crystal">
-    <img class="crystal" id="crystal-2" src="./assets/images/Clear_Crystal.jpg" alt="Clear_Crystal">
-    <img class="crystal" id="crystal-3" src="./assets/images/Pink_Crystal.jpeg" alt="Pink_Crystal">
-    <img class="crystal" id="crystal-4" src="./assets/images/Purple_Crystal.jpeg" alt="Purple_Crystal">
-    <!-- <button id="new-game">New Game!</button> -->
-    <h3>Desired Number:</h3>
-    <p id="num-goal"></p>
-    <h3>Your Total:</h3>
-    <p id="total"></p>
-    <h3>Wins:</h3>
-    <p id="wins"></p>
-    <h3>Losses:</h3>
-    <p id="losses"></p>
-
+    <div class="container">
+        <div class="row row-spacing">
+            <div class="col-md-12 text-center">
+                <h1>Crystal Collector Game</h1>
+            </div>
+        </div>
+        <div class="row row-spacing">
+            <div class="col-md-12 text-center">
+                <!-- images of crystals -->
+                <img class="crystal" id="crystal-1" src="./assets/images/Blue_Crystal.jpg" alt="Blue_Crystal">
+                <img class="crystal" id="crystal-2" src="./assets/images/Clear_Crystal.jpg" alt="Clear_Crystal">
+                <img class="crystal" id="crystal-3" src="./assets/images/Pink_Crystal.jpeg" alt="Pink_Crystal">
+                <img class="crystal" id="crystal-4" src="./assets/images/Purple_Crystal.jpeg" alt="Purple_Crystal">
+            </div>
+        </div>
+        <div class="row row-spacing">
+            <div class="col-md-3 text-center">
+                <h3>Desired Number:</h3>
+                <p id="num-goal"></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>Your Total:</h3>
+                <p id="total"></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>Wins:</h3>
+                <p id="wins"></p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h3>Losses:</h3>
+                <p id="losses"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- link to external js file -->
     <script src="./assets/javascript/game.js"></script>
