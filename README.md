@@ -1,5 +1,11 @@
 # unit-4-game
 
+### Received the below directions as a homework assignment for the CWRU Bootcamp Unit 4 assignment. The main focus was working on using jQuery to creat a Crystal Collector game
+### See main page for play instructions!
+
+
+### DIRECTIONS:
+
 ### Option One: CrystalsCollector Game (Recommended)
 
 ![Crystal Collector](Images/1-CrystalCollector.jpg)
